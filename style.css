@@ -364,4 +364,12 @@ body {
     width: 99px;
     left: 15px;
     top: 18px;
+    border-radius: 10px;
+}
+.audio {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    bottom: 20px;
+    right: 15px;
 }

@@ -43,16 +43,42 @@ body {
     width: 100vw;
     background-color: #fae1dd;
 }
+
+.dedicatorias {
+    display: grid;
+}
+
 .container {
     position: relative;
 }
+.container2 {
+    position: relative;
+    top: 188px;
+}
+
 .valentine {
     position: relative;
     top: 50px;
     cursor: pointer;
     animation: up 3s linear infinite;
 }
+
+.mother {
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    animation: up 3s linear infinite;
+    z-index: 0;
+}
+
 .envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f08080;
+    z-index: 1;
+}
+.envelope2 {
     position: relative;
     width: 300px;
     height: 200px;
@@ -61,6 +87,17 @@ body {
 }
 
 .envelope::before {
+    background-color: #f08080;
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    transform: rotate(45deg);
+    top: -105px;
+    left: 44px;
+    border-radius: 30px 0 0 0;
+}
+.envelope2::before {
     background-color: #f08080;
     content: "";
     position: absolute;
@@ -82,6 +119,16 @@ body {
     box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
     z-index: 3;
 }
+.cards1-2 {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    top: 5px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    z-index: 3;
+}
 .cards2 {
     position: absolute;
     background-color: #eae2b7;
@@ -92,7 +139,37 @@ body {
     box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
     z-index: 0;
 }
+.cards2-2 {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    top: 5px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
 .cards3 {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    top: 5px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+.cards3-2 {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    top: 5px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+.cards3-2_edit {
     position: absolute;
     background-color: #eae2b7;
     width: 270px;
@@ -113,7 +190,27 @@ body {
     left: 12px;
     top: 12px;
 }
+.cards1-2::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
+}
 .cards2::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
+}
+.cards2-2::before {
     content: "";
     position: absolute;
     border: 3px solid #003049;
@@ -133,7 +230,37 @@ body {
     left: 12px;
     top: 12px;
 }
+.cards3-2::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
+}
+.cards3-2_edit::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
+}
 .texs {
+    position: absolute;
+    font-family: "Brush Script MT", cursive;
+    font-size: 28px;
+    text-align: center;
+    line-height: 25px;
+    top: 19px;
+    left: 119px;
+    color: #003049;
+}
+.texs-2 {
     position: absolute;
     font-family: "Brush Script MT", cursive;
     font-size: 28px;
@@ -154,7 +281,29 @@ body {
     color: #003049;
     width: 232px;
 }
+.texs2-2 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 16px;
+    top: 1px;
+    left: 18px;
+    color: #003049;
+    width: 232px;
+}
 .texs3 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 16px;
+    top: 1px;
+    left: 18px;
+    color: #003049;
+    width: 232px;
+}
+.texs3-2 {
     position: absolute;
     font-family: sans-serif;
     font-size: 13px;
@@ -178,6 +327,18 @@ body {
     width: 28px;
     animation: heart 1s ease-out infinite;
 }
+.heats-2 {
+    background-color: #d62828;
+    display: inline-block;
+    height: 29px;
+    margin: 0 10px;
+    position: relative;
+    top: 110px;
+    left: 105px;
+    transform: rotate(-45deg);
+    width: 28px;
+    animation: heart 1s ease-out infinite;
+}
 
 .heats::before,
 .heats::after {
@@ -188,6 +349,16 @@ body {
     position: absolute;
     width: 30px;
 }
+.heats-2::before,
+.heats-2::after {
+    content: "";
+    background-color: #d62828;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+
 .heats::before {
     top: -15px;
     left: -1px;
@@ -197,6 +368,19 @@ body {
     top: 0;
 }
 .heats {
+    position: absolute;
+    top: 15px;
+}
+
+.heats-2::before {
+    top: -15px;
+    left: -1px;
+}
+.heats-2::after {
+    left: 15px;
+    top: 0;
+}
+.heats-2 {
     position: absolute;
     top: 15px;
 }
@@ -216,6 +400,22 @@ body {
     top: 50px;
     animation: heart 1s ease-out infinite;
 }
+.one-2,
+.two-2,
+.three-2,
+.four-2,
+.five-2 {
+    background-color: red;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    top: 50px;
+    animation: heart 1s ease-out infinite;
+}
+
 .one::before,
 .one::after,
 .two::before,
@@ -233,6 +433,24 @@ body {
     height: 11px;
     position: absolute;
 }
+.one-2::before,
+.one-2::after,
+.two-2::before,
+.two-2::after,
+.three-2::before,
+.three-2::after,
+.four-2::before,
+.four-2::after,
+.five-2::before,
+.five-2::after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    width: 12px;
+    height: 11px;
+    position: absolute;
+}
+
 .one::before,
 .two::before,
 .three::before,
@@ -241,6 +459,15 @@ body {
     top: -7px;
     left: -1px;
 }
+.one-2::before,
+.two-2::before,
+.three-2::before,
+.four-2::before,
+.five-2::before {
+    top: -7px;
+    left: -1px;
+}
+
 .one::after,
 .two::after,
 .three::after,
@@ -249,6 +476,15 @@ body {
     left: 5px;
     top: 0;
 }
+.one-2::after,
+.two-2::after,
+.three-2::after,
+.four-2::after,
+.five-2::after {
+    left: 5px;
+    top: 0;
+}
+
 .one {
     left: 10px;
     animation: heart 1s ease-out infinite;
@@ -270,7 +506,41 @@ body {
     left: 90px;
     animation: heart 1.7s ease-out infinite;
 }
+
+.one-2 {
+    left: 10px;
+    animation: heart 1s ease-out infinite;
+}
+.two-2 {
+    left: 30px;
+    animation: heart 2s ease-out infinite;
+}
+.three-2 {
+    left: 50px;
+    animation: heart 1.5s ease-out infinite;
+}
+
+.four-2 {
+    left: 70px;
+    animation: heart 2.3s ease-out infinite;
+}
+.five-2 {
+    left: 90px;
+    animation: heart 1.7s ease-out infinite;
+}
+
 .front {
+    position: absolute;
+    border-right: 180px solid #f4978e;
+    border-top: 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    left: 120px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+.front2 {
     position: absolute;
     border-right: 180px solid #f4978e;
     border-top: 95px solid transparent;
@@ -292,6 +562,16 @@ body {
     width: 0;
     height: 0;
 }
+.front2::before {
+    position: absolute;
+    content: "";
+    border-left: 300px solid #f8ad9d;
+    border-top: 195px solid transparent;
+    left: -120px;
+    top: -95px;
+    width: 0;
+    height: 0;
+}
 
 .shadow {
     position: absolute;
@@ -304,10 +584,29 @@ body {
     z-index: -1;
     animation: scale 3s linear infinite;
 }
+.shadow-2 {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.03);
+    top: 265px;
+    left: -15px;
+    z-index: -1;
+    animation: scale 3s linear infinite;
+}
+
 .valentine.closed .envelope::before {
     height: 0;
 }
 .valentine.closed .cards1 {
+    opacity: 0;
+}
+
+.mother.closed .envelope::before {
+    height: 0;
+}
+.mother.closed .cards1 {
     opacity: 0;
 }
 
@@ -318,6 +617,15 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
+.mother.closed .texs {
+    opacity: 0;
+}
+.mother.open .texs {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
 .open {
     top: -140px;
     transition: 1s ease;
@@ -354,6 +662,17 @@ body {
     z-index: 10;
     transition: 1s ease;
 }
+.open4 {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    top: 437px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    transition: 1s ease;
+}
 
 .frontOpen2 {
     transform: rotateY(270deg);
@@ -367,6 +686,13 @@ body {
     border-radius: 10px;
 }
 .audio {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    bottom: 20px;
+    right: 15px;
+}
+.audio-2 {
     position: absolute;
     width: 140px;
     height: 20px;
